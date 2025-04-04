@@ -1,0 +1,13 @@
+prefix=/Users/cukesheep/flare/out/install/Clang 16.0.0 arm64-apple-darwin23.6.0
+exec_prefix=${prefix}
+includedir=/Users/cukesheep/flare/out/install/Clang 16.0.0 arm64-apple-darwin23.6.0/include
+libdir=/Users/cukesheep/flare/out/install/Clang 16.0.0 arm64-apple-darwin23.6.0/lib
+
+Name: GLFW
+Description: A multi-platform library for OpenGL, window and input
+Version: 3.4.0
+URL: https://www.glfw.org/
+Requires.private: 
+Libs: -L${libdir} -lglfw3
+Libs.private:  -framework Cocoa -framework IOKit -framework CoreFoundation
+Cflags: -I${includedir}
