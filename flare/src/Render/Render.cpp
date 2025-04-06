@@ -1,4 +1,5 @@
-#include "flare/Render/Render.h"
+#include "flare/render/Render.h"
+#include "flare/base/VulkanSwapChain.h"
 
 #include <iostream>
 #include<set>
@@ -258,7 +259,15 @@ bool flare::Render::isDeviceSuitalbe(VkPhysicalDevice device)
 {
     QueueFamilyIndices indices = findQueueFamilies(device);
 
-    return indices.isCompelete();
+    bool extensionsSupported = checkDeviceExtensionSupport(device);
+
+    bool swapChainAdequate = false;
+    if (extensionsSupported) {
+        vks::SwapChainSupportDetails details = vks::querySwapChainSupport(device, surface);
+        swapChainAdequate = !details.formats.empty() && !details.presentModes.empty();
+    }
+
+    return indices.isCompelete()&&extensionsSupported&&swapChainAdequate;
 }
 
 void flare::Render::createLogicalDevice()
@@ -322,16 +331,16 @@ std::vector<const char *> flare::Render::getRequiredDeviceExtensions()
     vkEnumerateDeviceExtensionProperties(physicalDevice, nullptr, &extensionCount, extensions.data());
 
     std::vector<const char *> requiredExtensions;
-    for (const auto &requiredExtension : requiredDeviceExtensions)
-    {
-        for (const auto &extension : extensions)
-        {
-            if (strcmp(requiredExtension, extension.extensionName))
-            {
-                requiredExtensions.push_back(requiredExtension);
-            }
+    for (const auto& extension : extensions) {
+        //if device can support this extension,then must include this extension
+        if (extension.extensionName == "VK_KHR_portability_subset") {
+            requiredExtensions.push_back("VK_KHR_portability_subset");
+            break;
         }
     }
+
+    //include extensions that project need
+    requiredExtensions.insert(requiredExtensions.end(), deviceExtensions.begin(), deviceExtensions.end());
 
     return requiredExtensions;
 }
@@ -371,4 +380,43 @@ flare::QueueFamilyIndices flare::Render::findQueueFamilies(VkPhysicalDevice devi
     }
 
     return indices;
+}
+
+bool flare::Render::checkDeviceExtensionSupport(VkPhysicalDevice device)
+{
+    uint32_t extensionCount = 0;
+    vkEnumerateDeviceExtensionProperties(device, nullptr, &extensionCount, nullptr);
+    std::vector<VkExtensionProperties> availableExtensions(extensionCount);
+    vkEnumerateDeviceExtensionProperties(device, nullptr, &extensionCount, availableExtensions.data());
+    
+    std::set<std::string> requiredExtensions(deviceExtensions.begin(), deviceExtensions.end());
+
+    for (const auto& extension : availableExtensions) {
+        requiredExtensions.erase(extension.extensionName);
+    }
+
+    return requiredExtensions.empty();
+}
+
+void flare::Render::createSwapChain()
+{
+    vks::SwapChainSupportDetails swapChainSupport = vks::querySwapChainSupport(physicalDevice, surface);
+
+    VkSurfaceFormatKHR surfaceFormat = vks::chooseSwapChainSurfaceFormat(swapChainSupport.formats);
+    VkPresentModeKHR surfacePresentMode = vks::chooseSwapChainPresentMode(swapChainSupport.presentModes);
+    VkExtent2D extent = vks::chooseSwapChainExtent(window, swapChainSupport.capabilities);
+
+    uint32_t imageCount = swapChainSupport.capabilities.minImageCount + 1;
+    if (swapChainSupport.capabilities.maxImageCount > 0 && imageCount > swapChainSupport.capabilities.maxImageCount) {
+        imageCount = swapChainSupport.capabilities.maxImageCount;
+    }
+
+    VkSwapchainCreateInfoKHR createInfo{};
+    createInfo.sType = VK_STRUCTURE_TYPE_SWAPCHAIN_CREATE_INFO_KHR;
+    createInfo.surface = surface;
+    createInfo.minImageCount = imageCount;
+    createInfo.imageFormat = surfaceFormat.format;
+    createInfo.imageColorSpace = surfaceFormat.colorSpace;
+    createInfo.imageExtent = extent;
+    createInfo.imageArrayLayers = 1;
 }

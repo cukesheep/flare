@@ -1,6 +1,8 @@
 #include <exception>
 #include <iostream>
-#include "flare/Render/Render.h"
+#include "flare/render/Render.h"
+
+#include "flare/base/VulkanSwapChain.h"
 
 int main(){
     flare::Render* render=new flare::Render(800,600,"flare");
