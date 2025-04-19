@@ -455,4 +455,3 @@ int main(int argc, char** argv)
     glfwTerminate();
     exit(EXIT_SUCCESS);
 }
-

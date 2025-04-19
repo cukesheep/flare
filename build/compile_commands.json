@@ -1,0 +1,152 @@
+[
+{
+  "directory": "/Users/cukesheep/flare/build",
+  "command": "/usr/bin/clang  -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/flare.dir/external/glad/src/glad.c.o -c /Users/cukesheep/flare/external/glad/src/glad.c",
+  "file": "/Users/cukesheep/flare/external/glad/src/glad.c",
+  "output": "CMakeFiles/flare.dir/external/glad/src/glad.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build",
+  "command": "/usr/bin/clang++  -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/flare.dir/flare/main.cpp.o -c /Users/cukesheep/flare/flare/main.cpp",
+  "file": "/Users/cukesheep/flare/flare/main.cpp",
+  "output": "CMakeFiles/flare.dir/flare/main.cpp.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build",
+  "command": "/usr/bin/clang++  -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/flare.dir/flare/render/render.cpp.o -c /Users/cukesheep/flare/flare/render/render.cpp",
+  "file": "/Users/cukesheep/flare/flare/render/render.cpp",
+  "output": "CMakeFiles/flare.dir/flare/render/render.cpp.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build",
+  "command": "/usr/bin/clang++  -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/flare.dir/flare/window/window.cpp.o -c /Users/cukesheep/flare/flare/window/window.cpp",
+  "file": "/Users/cukesheep/flare/flare/window/window.cpp",
+  "output": "CMakeFiles/flare.dir/flare/window/window.cpp.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/context.c.o -c /Users/cukesheep/flare/external/glfw/src/context.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/init.c.o -c /Users/cukesheep/flare/external/glfw/src/init.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/init.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/input.c.o -c /Users/cukesheep/flare/external/glfw/src/input.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/input.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/monitor.c.o -c /Users/cukesheep/flare/external/glfw/src/monitor.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/monitor.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/platform.c.o -c /Users/cukesheep/flare/external/glfw/src/platform.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/platform.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/platform.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/vulkan.c.o -c /Users/cukesheep/flare/external/glfw/src/vulkan.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/vulkan.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/window.c.o -c /Users/cukesheep/flare/external/glfw/src/window.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/window.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/window.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/egl_context.c.o -c /Users/cukesheep/flare/external/glfw/src/egl_context.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/egl_context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/osmesa_context.c.o -c /Users/cukesheep/flare/external/glfw/src/osmesa_context.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/osmesa_context.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/null_init.c.o -c /Users/cukesheep/flare/external/glfw/src/null_init.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/null_init.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_init.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/null_monitor.c.o -c /Users/cukesheep/flare/external/glfw/src/null_monitor.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/null_monitor.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/null_window.c.o -c /Users/cukesheep/flare/external/glfw/src/null_window.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/null_window.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_window.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/null_joystick.c.o -c /Users/cukesheep/flare/external/glfw/src/null_joystick.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/null_joystick.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_time.c.o -c /Users/cukesheep/flare/external/glfw/src/cocoa_time.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/cocoa_time.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/cocoa_time.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/posix_module.c.o -c /Users/cukesheep/flare/external/glfw/src/posix_module.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/posix_module.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/posix_thread.c.o -c /Users/cukesheep/flare/external/glfw/src/posix_thread.c",
+  "file": "/Users/cukesheep/flare/external/glfw/src/posix_thread.c",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -x objective-c -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_init.m.o -c /Users/cukesheep/flare/external/glfw/src/cocoa_init.m",
+  "file": "/Users/cukesheep/flare/external/glfw/src/cocoa_init.m",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/cocoa_init.m.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -x objective-c -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_joystick.m.o -c /Users/cukesheep/flare/external/glfw/src/cocoa_joystick.m",
+  "file": "/Users/cukesheep/flare/external/glfw/src/cocoa_joystick.m",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/cocoa_joystick.m.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -x objective-c -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_monitor.m.o -c /Users/cukesheep/flare/external/glfw/src/cocoa_monitor.m",
+  "file": "/Users/cukesheep/flare/external/glfw/src/cocoa_monitor.m",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/cocoa_monitor.m.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -x objective-c -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/cocoa_window.m.o -c /Users/cukesheep/flare/external/glfw/src/cocoa_window.m",
+  "file": "/Users/cukesheep/flare/external/glfw/src/cocoa_window.m",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/cocoa_window.m.o"
+},
+{
+  "directory": "/Users/cukesheep/flare/build/external/glfw/src",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/clang -D_GLFW_COCOA -I/Users/cukesheep/flare/external/glad/include -I/Users/cukesheep/flare/flare -I/Users/cukesheep/flare/external/glfw/include -I/Users/cukesheep/flare/external/glfw/src -I/Users/cukesheep/flare/build/external/glfw/src -x objective-c -g -std=c99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fPIC -Wall -o CMakeFiles/glfw.dir/nsgl_context.m.o -c /Users/cukesheep/flare/external/glfw/src/nsgl_context.m",
+  "file": "/Users/cukesheep/flare/external/glfw/src/nsgl_context.m",
+  "output": "external/glfw/src/CMakeFiles/glfw.dir/nsgl_context.m.o"
+}
+]
