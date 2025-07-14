@@ -1,0 +1,338 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						3,
+						4,
+						7
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "plugins/glm",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-plugins.glm-Debug-8bffb1da4cd71cf06df8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "plugins/glm"
+				},
+				{
+					"build" : "plugins/glm/glm",
+					"jsonFile" : "directory-plugins.glm.glm-Debug-18536e12305b3e192cd4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 1,
+					"source" : "plugins/glm/glm",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "plugins/glad",
+					"jsonFile" : "directory-plugins.glad-Debug-17833e0666757a9b0b35.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "plugins/glad",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "plugins/glfw",
+					"childIndexes" : 
+					[
+						5,
+						6
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-plugins.glfw-Debug-19455c241b7da789200e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "plugins/glfw",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "plugins/glfw/src",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-plugins.glfw.src-Debug-fa286c45ff4bcb703d75.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 3,
+					"source" : "plugins/glfw/src",
+					"targetIndexes" : 
+					[
+						3,
+						7
+					]
+				},
+				{
+					"build" : "plugins/glfw/docs",
+					"jsonFile" : "directory-plugins.glfw.docs-Debug-e0942801e44c734af7fd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 3,
+					"source" : "plugins/glfw/docs"
+				},
+				{
+					"build" : "plugins/assimp",
+					"childIndexes" : 
+					[
+						8,
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-plugins.assimp-Debug-1d388997ac20ac8c8a8c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 4,
+					"source" : "plugins/assimp"
+				},
+				{
+					"build" : "plugins/assimp/code",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-plugins.assimp.code-Debug-8d7d34e5954502bbb542.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.22"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 4,
+					"source" : "plugins/assimp/code",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "plugins/assimp/test",
+					"childIndexes" : 
+					[
+						10
+					],
+					"jsonFile" : "directory-plugins.assimp.test-Debug-0bad3e27e016463cea38.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 7,
+					"projectIndex" : 4,
+					"source" : "plugins/assimp/test",
+					"targetIndexes" : 
+					[
+						6
+					]
+				},
+				{
+					"build" : "plugins/assimp/test/headercheck",
+					"jsonFile" : "directory-plugins.assimp.test.headercheck-Debug-bf4ea21335bfe7029322.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 9,
+					"projectIndex" : 4,
+					"source" : "plugins/assimp/test/headercheck"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "flare",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1,
+						2
+					],
+					"name" : "glm",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "glad",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						4,
+						5,
+						6
+					],
+					"name" : "GLFW",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						3,
+						5,
+						7
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						7,
+						8,
+						9,
+						10
+					],
+					"name" : "Assimp",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 8,
+					"id" : "assimp::@9418f81425701cd55189",
+					"jsonFile" : "target-assimp-Debug-4bd36ed67947c9e5d1dc.json",
+					"name" : "assimp",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "flare::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-flare-Debug-10a53e0f29bfd610a367.json",
+					"name" : "flare",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "glad::@0579ab0174dbd7edce15",
+					"jsonFile" : "target-glad-Debug-db4becae39bf10148a78.json",
+					"name" : "glad",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "glfw::@41ef3530ba0adc0372a8",
+					"jsonFile" : "target-glfw-Debug-d255c9512c1ef839bca5.json",
+					"name" : "glfw",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "glm::@3875f000356a48cc55fc",
+					"jsonFile" : "target-glm-Debug-7eec62b3cb8bbd09da8f.json",
+					"name" : "glm",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "uninstall::@8d0252d25f6fe7b27494",
+					"jsonFile" : "target-uninstall-Debug-43459d11069b77dcffa4.json",
+					"name" : "uninstall",
+					"projectIndex" : 3
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "unit::@dd932a598a0ac0931d61",
+					"jsonFile" : "target-unit-Debug-774aed2d836f4f55d115.json",
+					"name" : "unit",
+					"projectIndex" : 4
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "update_mappings::@41ef3530ba0adc0372a8",
+					"jsonFile" : "target-update_mappings-Debug-37ea6a8f8f3db62ae545.json",
+					"name" : "update_mappings",
+					"projectIndex" : 3
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/cukesheep/flare/cmake-build-debug",
+		"source" : "/Users/cukesheep/flare"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
